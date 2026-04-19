@@ -1,0 +1,50 @@
+Fraud Detection in Healthcare Claims
+I’ve built a case study on detecting fraudulent healthcare claims using synthetic data enriched with patient demographics, provider details, and claim attributes.
+🎯 Objective:
+- Detect fraudulent claims using ML models (Logistic Regression, Random Forest, XGBoost, LSTM).  
+- Engineer features such as Claim-to-Approved Ratio, Lifestyle Risk Score, and Specialization Frequency.  
+- Evaluate performance using Accuracy, Precision, Recall, and AUC.  
+- To train ML models (Logistic Regression, Random Forest, XGBoost, LSTM) that can identify fraudulent claims with high accuracy.
+⚙️ Workflow:
+Data preprocessing → Feature engineering → Model training → Evaluation → Visualization
+
+
+## 📌 Overview
+This repository presents a case study on **fraud detection in healthcare claims** using synthetic data. The dataset simulates real-world claim scenarios with patient 
+demographics, provider details, claim attributes, and fraud indicators. The goal is to build and evaluate machine learning models that can identify,
+fraudulent claims with high accuracy.
+
+Dataset Variables
+The dataset includes the following fields:
+
+- **Provider_ID**: Unique identifier for healthcare provider  
+- **Patient_Age**: Age of patient  
+- **Gender**: Male, Female, Other  
+- **Age_Bracket**: Child, Teen, Young Adult, Middle-Age, Senior  
+- **Lifestyle**: Sedentary, Moderate, Active  
+- **Doctor_Specialization**: General, Orthopaedic, Neuro, Chiropractic, etc.  
+- **Claim_Amount**: Total claim submitted (INR)  
+- **Approved_Amount**: Amount approved by insurer  
+- **Insurance_Type**: Private, Government, Employer-sponsored  
+- **Days_Between_Visits**: Gap between patient visits  
+- **Number_of_Claims**: Total claims filed by patient  
+- **Provider_State**: State of provider in India  
+- **Claim_Status**: Approved, Rejected, Pending  
+- **Length_of_Stay**: Hospital stay duration (days)  
+- **Visit_Type**: OPD, IPD, Emergency  
+- **Chronic_Condition**: Diabetes, Hypertension, etc.  
+- **Prior_Visits**: Number of past visits  
+- **Is_Fraud**: Fraudulent claim indicator (0 = Legit, 1 = Fraud)  
+- **Last_Claim**: Date of last claim submission  
+
+
+
+Workflow
+1. **Data Preprocessing**: Cleaning, encoding categorical variables, handling class imbalance.  
+2. **Feature Engineering**: Creating derived features for fraud detection.  
+3. **Model Training**: Training multiple ML models with walk-forward validation.  
+4. **Evaluation**: Comparing metrics across models.  
+5. **Visualization**: Fraud distribution, feature importance, ROC curves.  
+
+
+
